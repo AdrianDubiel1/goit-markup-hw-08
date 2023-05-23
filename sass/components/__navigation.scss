@@ -14,7 +14,7 @@
   font-weight: 500;
   font-size: 14px;
   color: $brand-color;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.02em;
   line-height: 1.74;
   &__agency {
     padding: 0px 46px 0px 93px;
@@ -86,7 +86,7 @@
   transition-duration: $duration;
   transition-timing-function: $timing-function;
 }
-.menu-toggle {
+.menu-modal {
   margin: 10px 0 10px 276px;
   height: 40px;
   width: 40px;
