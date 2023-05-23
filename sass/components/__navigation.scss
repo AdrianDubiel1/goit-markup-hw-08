@@ -1,0 +1,103 @@
+@use "../utils/_vars" as *;
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 480px;
+  padding: 0px 0;
+}
+.header1 {
+  display: flex;
+  align-items: center;
+  max-width: 480px;
+}
+.navigation {
+  display: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: $brand-color;
+  letter-spacing: 0.2px;
+  line-height: 1.74;
+  &__agency {
+    padding: 0px 46px 0px 93px;
+    position: relative;
+    &--now::after {
+      content: "";
+      position: absolute;
+      width: 56px;
+      height: 4px;
+      border: 1px solid rgba(33, 150, 243, 1);
+      border-radius: 2px;
+      background-color: $active-color;
+      margin-top: 28px;
+    }
+  }
+  &__portfolio {
+    padding: 0px 46px 0px 0px;
+    &--now::after {
+      content: "";
+      position: absolute;
+      width: 56px;
+      height: 4px;
+      border: 1px solid rgba(33, 150, 243, 1);
+      border-radius: 2px;
+      background-color: $active-color;
+      margin-top: 28px;
+    }
+  }
+  &__contact {
+    padding-right: 345px;
+  }
+}
+.now-1 {
+  color: $active-color;
+}
+.contact-nav {
+  display: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 1.17;
+  &__mail {
+    padding-right: 30px;
+    display: flex;
+    line-height: 1.17;
+    color: $description-color;
+  }
+  &__addres {
+    display: flex;
+    align-items: center;
+    color: $description-color;
+    line-height: 1.17;
+    &:hover,
+    &focus {
+      color: $active-color;
+      transition-duration: $duration;
+      transition-timing-function: $timing-function;
+    }
+  }
+}
+.icon-mail > svg {
+  display: flex;
+  margin-right: 10px;
+  line-height: 1.17;
+}
+.icon-mail:hover,
+.icon-mail:focus {
+  fill: $active-color;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
+.menu {
+  min-height: 40px;
+  min-width: 40px;
+  margin-left: 276px;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:hover,
+  &:focus {
+    fill: $active-color;
+  }
+}

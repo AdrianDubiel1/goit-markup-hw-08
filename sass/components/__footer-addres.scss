@@ -1,0 +1,38 @@
+@use "../utils/_vars" as *;
+.footer-first-section {
+  max-width: 246px;
+}
+.data-contact {
+  padding: 0 0 60px 0px;
+}
+.adress {
+  display: flex;
+  flex-direction: column;
+  &__maps {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    &:hover,
+    &:focus {
+      color: $active-color;
+      transition-duration: $duration;
+      transition-timing-function: $timing-function;
+    }
+  }
+
+  &__mail {
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+    &:hover,
+    &:focus {
+      color: $active-color;
+      transition-duration: $duration;
+      transition-timing-function: $timing-function;
+    }
+  }
+}

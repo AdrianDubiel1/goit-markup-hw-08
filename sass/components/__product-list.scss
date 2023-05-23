@@ -1,0 +1,56 @@
+@use "../utils/_vars" as *;
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.product-img {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 1px 4px 6px 0px #00000016, 0px 0px 4px 0px #00000006,
+      0px 1px 1px 0px #00000012;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    &:hover .product-bgn__description {
+      transform: translateY(0%);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+.product-bgn {
+  position: relative;
+  overflow: hidden;
+  &__description {
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.56;
+    padding: 49px 45px 49px 24px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+  }
+}
+.project {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  &__definition {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+  }
+  &__description {
+    color: $description-color;
+    line-height: 1.875;
+  }
+}

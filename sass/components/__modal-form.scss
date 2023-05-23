@@ -1,0 +1,112 @@
+@use "../utils/_vars" as *;
+.form {
+  margin-top: 12px;
+  &__title {
+    margin-top: 2px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: rgba(33, 33, 33, 1);
+  }
+  &__element {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 1);
+  }
+  &__input {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    padding-left: 40px;
+    outline-style: none;
+    &--icon-user {
+      position: absolute;
+      width: 18px;
+      top: 104px;
+      left: 52px;
+    }
+    &--icon-tel {
+      position: absolute;
+      width: 13px;
+      top: 174px;
+      left: 54px;
+    }
+    &--icon-email {
+      position: absolute;
+      width: 15px;
+      top: 243px;
+      left: 54px;
+    }
+  }
+  &__input:is(:hover, :focus-within),
+  textarea:is(:hover, :focus-within) {
+    border-color: rgba(33, 150, 243, 1);
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+  &__input:is(:hover, :focus-within) + svg {
+    fill: rgba(33, 150, 243, 1);
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+}
+.checked {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  margin-left: 55px;
+  top: 442px;
+  appearance: none;
+  &__no {
+    position: absolute;
+    top: 442px;
+    left: 55px;
+  }
+  &__yes {
+    position: absolute;
+    display: none;
+    top: 442px;
+    left: 55px;
+    fill: rgba(255, 255, 255, 1);
+    background-color: var(--active-color);
+    border-radius: 2px;
+  }
+}
+.check:checked + .checked {
+  display: initial;
+}
+.private-policy {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(117, 117, 117, 1);
+  padding: 10px 14px 30px 39px;
+  &__link {
+    text-decoration: underline;
+    color: rgba(33, 150, 243, 1);
+    height: 24px;
+  }
+}
+.button-modal {
+  margin-left: 124px;
+  height: 50px;
+  width: 200px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(33, 150, 243, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
