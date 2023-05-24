@@ -1,5 +1,6 @@
 @use "../utils/_vars" as *;
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   max-width: 480px;
@@ -86,19 +87,19 @@
   transition-duration: $duration;
   transition-timing-function: $timing-function;
 }
-.menu-modal {
-  margin: 10px 0 10px 276px;
-  height: 40px;
-  width: 40px;
+
+.menu-toggle {
+  position: absolute;
+  right: 0;
+  top: 10;
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
+  border-radius: 50%;
   outline: none;
-  &:hover,
-  &:focus {
-    fill: $active-color;
-  }
 }

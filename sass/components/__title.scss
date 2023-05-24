@@ -1,25 +1,28 @@
 @use "../utils/_vars" as *;
 .title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.37;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   color: #ffffff;
-  width: 696px;
+  max-width: 365px;
   margin-bottom: 30px;
   &-background {
+    max-width: 480px;
+    height: 400px;
     background: linear-gradient(
         to top,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/goit-markup-hw-05/images/img-background.jpeg);
+      url(/goit-markup-hw-08/images/mobile-background\ 480x400.jpg);
+    background-size: 480px 400px;
 
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 200px 0;
+    padding: 118px 0;
   }
   &__button {
     font-weight: 700;

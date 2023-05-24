@@ -3,6 +3,7 @@ body {
   font-family: "Roboto", "sans-serif";
   color: $brand-color;
   max-width: 480px;
+  min-width: 320px;
   margin: 0 auto;
 }
 * {
@@ -53,6 +54,7 @@ img {
 .container {
   margin: 0 auto;
   max-width: 480px;
+  min-width: 320px;
   width: 100%;
   padding: 0 15px;
   &__title {
