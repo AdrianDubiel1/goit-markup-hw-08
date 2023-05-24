@@ -1,7 +1,7 @@
 @use "../utils/_vars" as *;
 .backdrop {
   transition: visibility 0.4s linear, opacity 0.4s linear;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

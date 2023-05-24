@@ -1,20 +1,18 @@
 @use "../utils/_vars" as *;
 .come-to-us {
-  max-width: 276px;
+  text-align: center;
 }
 .come-to-us-title {
-  max-width: 150px;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.17;
   color: #ffffff;
-  margin: 72px 0px 20px 70px;
+  margin: 60px 0 20px 0;
   &__icons {
     display: flex;
-    justify-content: space-between;
-    padding-left: 70px;
-    margin-right: 863px;
+    justify-content: center;
+    padding-bottom: 60px;
   }
 
   &__element {

@@ -48,8 +48,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-.section {
-  padding: 94px;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px;
+  }
 }
 .container {
   margin: 0 auto;
@@ -63,11 +65,13 @@ img {
     text-align: center;
     letter-spacing: 0.3px;
     line-height: 1.17;
-    padding-bottom: 50px;
+    padding-top: 60px;
   }
 }
-.footer {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+  }
 }
 .link {
   color: $brand-color;

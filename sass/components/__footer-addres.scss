@@ -1,13 +1,16 @@
 @use "../utils/_vars" as *;
 .footer-first-section {
-  max-width: 246px;
+  max-width: 480px;
 }
 .data-contact {
-  padding: 0 0 60px 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .adress {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   &__maps {
     color: #ffffff;
     font-weight: 400;
