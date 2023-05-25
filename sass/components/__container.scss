@@ -3,7 +3,6 @@
 .fix {
   padding-bottom: 0;
 }
-
 .description {
   margin: 60px 0;
   &__background {
@@ -30,5 +29,11 @@
     line-height: 1.71;
     letter-spacing: 0.3px;
     padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .description {
+    display: flex;
+    flex-basis: calc((100% - 30px) / 2);
   }
 }

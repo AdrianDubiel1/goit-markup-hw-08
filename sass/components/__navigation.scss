@@ -2,50 +2,64 @@
 .header {
   position: relative;
   display: flex;
-  align-items: center;
   max-width: 480px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    min-width: 768px;
+  }
 }
 .header1 {
   display: flex;
   align-items: center;
   max-width: 480px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199x) {
+  .header1 {
+    min-width: 768px;
+  }
+}
 .navigation {
   display: none;
-  font-weight: 500;
-  font-size: 14px;
-  color: $brand-color;
-  letter-spacing: 0.02em;
-  line-height: 1.74;
-  &__agency {
-    padding: 0px 46px 0px 93px;
-    position: relative;
-    &--now::after {
-      content: "";
-      position: absolute;
-      width: 56px;
-      height: 4px;
-      border: 1px solid rgba(33, 150, 243, 1);
-      border-radius: 2px;
-      background-color: $active-color;
-      margin-top: 28px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    display: contents;
+    font-weight: 500;
+    font-size: 14px;
+    color: $brand-color;
+    letter-spacing: 0.02em;
+    line-height: 1.74;
+    &__agency {
+      padding: 0px 60px 0px 83px;
+      position: relative;
+      &--now::after {
+        content: "";
+        position: absolute;
+        width: 56px;
+        height: 4px;
+        border: 1px solid rgba(33, 150, 243, 1);
+        border-radius: 2px;
+        background-color: $active-color;
+        margin-top: 28px;
+      }
     }
-  }
-  &__portfolio {
-    padding: 0px 46px 0px 0px;
-    &--now::after {
-      content: "";
-      position: absolute;
-      width: 56px;
-      height: 4px;
-      border: 1px solid rgba(33, 150, 243, 1);
-      border-radius: 2px;
-      background-color: $active-color;
-      margin-top: 28px;
+    &__portfolio {
+      padding: 0px 60px 0px 0px;
+      &--now::after {
+        content: "";
+        position: absolute;
+        width: 56px;
+        height: 4px;
+        border: 1px solid rgba(33, 150, 243, 1);
+        border-radius: 2px;
+        background-color: $active-color;
+        margin-top: 28px;
+      }
     }
-  }
-  &__contact {
-    padding-right: 345px;
+    &__contact {
+      padding-right: 101px;
+    }
   }
 }
 .now-1 {
@@ -53,41 +67,47 @@
 }
 .contact-nav {
   display: none;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.2px;
-  line-height: 1.17;
-  &__mail {
-    padding-right: 30px;
-    display: flex;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav {
+    display: contents;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
     line-height: 1.17;
-    color: $description-color;
-  }
-  &__addres {
-    display: flex;
-    align-items: center;
-    color: $description-color;
-    line-height: 1.17;
-    &:hover,
-    &focus {
-      color: $active-color;
-      transition-duration: $duration;
-      transition-timing-function: $timing-function;
+    &__mail {
+      padding-top: 21px;
+      padding-bottom: 10px;
+      display: flex;
+      line-height: 1.17;
+      color: $description-color;
+    }
+    &__addres {
+      display: flex;
+      margin-left: 0;
+      color: $description-color;
+      line-height: 1.17;
+      &:hover,
+      &focus {
+        color: $active-color;
+        transition-duration: $duration;
+        transition-timing-function: $timing-function;
+      }
     }
   }
+  .icon-mail > svg {
+    display: flex;
+    margin-right: 8px;
+    line-height: 1.17;
+  }
+  .icon-mail:hover,
+  .icon-mail:focus {
+    fill: $active-color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
 }
-.icon-mail > svg {
-  display: flex;
-  margin-right: 10px;
-  line-height: 1.17;
-}
-.icon-mail:hover,
-.icon-mail:focus {
-  fill: $active-color;
-  transition-duration: $duration;
-  transition-timing-function: $timing-function;
-}
-
 .menu-toggle {
   position: absolute;
   right: 0;
@@ -102,4 +122,9 @@
   border: none;
   border-radius: 50%;
   outline: none;
+}
+@media screen and (min-width: 480px) {
+  .menu-toggle {
+    display: none;
+  }
 }
