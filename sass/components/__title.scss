@@ -11,19 +11,32 @@
   &-background {
     max-width: 480px;
     height: 400px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 118px 0;
     background: linear-gradient(
         to top,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/goit-markup-hw-08/images/mobile-background\ 480x400.jpg);
+      url(/goit-markup-hw-08/images/mobile/mobile-background.jpg);
     background-size: 480px 400px;
 
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding: 118px 0;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/goit-markup-hw-08/images/mobile/mobile-background@2x.jpg);
+      background-size: 480px 400px;
+    }
   }
+
   &__button {
     font-weight: 700;
     font-size: 16px;
@@ -38,6 +51,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
+
 @media screen and (min-width: 768px) {
   .title-background {
     max-width: 768px;
@@ -47,22 +61,46 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/goit-markup-hw-08/images/tablet-background\ 768x400.jpg);
+      url(/goit-markup-hw-08/images/tablet-background.jpg);
     background-size: 768px 400px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/goit-markup-hw-08/images/tablet-background@2x.jpg);
+      background-size: 480px 400px;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
   .title-background {
     max-width: 1600px;
     height: 600px;
+    padding: 200px 0;
     background: linear-gradient(
         to top,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/goit-markup-hw-08/images/desktop-background\ 1600x600.jpg);
+      url(/goit-markup-hw-08/images/desktop-background.jpg);
     background-size: 1600px 600px;
-    padding: 200px 0;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/goit-markup-hw-08/images/desktop-background@2x.jpg);
+      background-size: 480px 400px;
+    }
   }
   .title {
     font-size: 44px;
