@@ -1,6 +1,5 @@
 @use "../utils/_vars" as *;
 .our-clients {
-  display: block;
   flex-basis: calc((100% - 30px) / 2);
   display: flex;
   align-items: center;
@@ -25,5 +24,10 @@
     cursor: pointer;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-clients {
+    flex-basis: calc((100% - 2 * 30px) / 3);
   }
 }

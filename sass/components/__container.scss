@@ -4,6 +4,10 @@
   padding-bottom: 0;
 }
 .description {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
   margin: 60px 0;
   &__background {
     display: flex;
@@ -33,7 +37,19 @@
 }
 @media screen and (min-width: 768px) {
   .description {
-    display: flex;
     flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+    &__background {
+      max-width: 354px;
+    }
+    &__title {
+      justify-content: left;
+      max-width: 354px;
+    }
+    &__definition {
+      justify-content: left;
+      max-width: 354px;
+      padding-bottom: 30px;
+    }
   }
 }
