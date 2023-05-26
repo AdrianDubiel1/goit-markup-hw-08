@@ -12,6 +12,11 @@ body {
     min-width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1600px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -30,6 +35,12 @@ header {
 }
 footer {
   background-color: #2f303a;
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+  }
 }
 address {
   font-style: normal;
@@ -80,10 +91,15 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer {
-    display: flex;
+  .container {
+    max-width: 1200px;
+    &__title {
+      padding-bottom: 50px;
+      padding-top: 0;
+    }
   }
 }
+
 .link {
   color: $brand-color;
   border: none;

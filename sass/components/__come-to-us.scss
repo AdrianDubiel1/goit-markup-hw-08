@@ -2,6 +2,7 @@
 .come-to-us {
   text-align: center;
 }
+
 .come-to-us-title {
   font-size: 14px;
   font-weight: 700;
@@ -29,6 +30,27 @@
       cursor: pointer;
       transition-duration: $duration;
       transition-timing-function: $timing-function;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .come-to-us {
+    margin: 22px 0 0 144px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .come-to-us {
+    margin: 0;
+    max-width: 276px;
+    text-align: left;
+  }
+  .come-to-us-title {
+    margin: 72px 0px 20px 70px;
+    &__icons {
+      justify-content: space-between;
+      padding-left: 70px;
+      margin-right: 863px;
+      padding-bottom: 0;
     }
   }
 }

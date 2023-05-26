@@ -53,3 +53,19 @@
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  .description {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    margin: 0;
+    &__background {
+      max-width: 270px;
+    }
+    &__title {
+      max-width: 270px;
+    }
+    &__definition {
+      max-width: 270px;
+      padding-bottom: 0;
+    }
+  }
+}

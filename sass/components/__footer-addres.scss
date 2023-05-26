@@ -2,6 +2,7 @@
 .footer-first-section {
   max-width: 480px;
 }
+
 .data-contact {
   display: flex;
   justify-content: center;
@@ -37,5 +38,34 @@
       transition-duration: $duration;
       transition-timing-function: $timing-function;
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-first-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 76px;
+    max-width: 329px;
+  }
+  .data-contact {
+    max-width: 253px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-first-section {
+    max-width: 246px;
+    padding-left: 0;
+    display: flex;
+  }
+  .data-contact {
+    padding-bottom: 60px;
+  }
+  .adress {
+    justify-content: left;
   }
 }

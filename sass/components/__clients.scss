@@ -30,4 +30,20 @@
   .our-clients {
     flex-basis: calc((100% - 2 * 30px) / 3);
   }
+  .clients-icon__background {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-icon {
+    padding: 16px 32px;
+    &__background {
+      margin-top: 0;
+      width: 170px;
+    }
+  }
+  .our-clients {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+    padding-bottom: 0;
+  }
 }

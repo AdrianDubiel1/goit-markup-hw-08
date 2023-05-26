@@ -40,7 +40,8 @@
 }
 @media screen and (min-width: 768px) {
   .title-background {
-    min-width: 768px;
+    max-width: 768px;
+
     background: linear-gradient(
         to top,
         rgba(47, 48, 58, 0.4),
@@ -48,5 +49,24 @@
       ),
       url(/goit-markup-hw-08/images/tablet-background\ 768x400.jpg);
     background-size: 768px 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-background {
+    max-width: 1600px;
+    height: 600px;
+    background: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/goit-markup-hw-08/images/desktop-background\ 1600x600.jpg);
+    background-size: 1600px 600px;
+    padding: 200px 0;
+  }
+  .title {
+    font-size: 44px;
+    line-height: 1.37;
+    max-width: 696px;
   }
 }

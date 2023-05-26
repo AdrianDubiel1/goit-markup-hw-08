@@ -6,7 +6,7 @@
     font-weight: 700;
     text-align: center;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: rgba(33, 33, 33, 1);
   }
@@ -91,7 +91,6 @@
   &__link {
     text-decoration: underline;
     color: rgba(33, 150, 243, 1);
-    // height: 24px;
   }
 }
 .button-modal {
@@ -112,5 +111,34 @@
     background-color: rgba(33, 150, 243, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    &__input--icon-user {
+      top: 104px;
+      left: 52px;
+    }
+    &__input--icon-tel {
+      top: 174px;
+      left: 54px;
+    }
+    &__input--icon-email {
+      top: 243px;
+      left: 54px;
+    }
+  }
+  .checked {
+    top: 442px;
+    &__no {
+      top: 442px;
+    }
+    &__yes {
+      top: 442px;
+    }
+  }
+  .private-policy {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
