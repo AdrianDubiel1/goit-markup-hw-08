@@ -38,7 +38,7 @@
       position: absolute;
       fill: rgba(255, 255, 255, 1);
       top: 13px;
-      right: 13px;
+      right: 28px;
     }
   }
 }
@@ -72,41 +72,32 @@
   .newsletter-area {
     margin-top: 60px;
   }
-  .newsletter__label {
-    padding-left: 156px;
+  .input-footer {
+    margin-left: 166px;
   }
 }
 @media screen and (min-width: 1200px) {
   .newsletter {
-    padding: 72px 0 0 78px;
-    justify-content: flex-start;
+    justify-content: left;
     &-area {
-      margin-top: 0;
+      margin: 72px 0 0 78px;
       width: 655px;
     }
     &__label {
       display: inline;
-      padding-left: 0;
     }
     &__button {
-      display: flex;
-      display: inline;
-      justify-content: flex-start;
-      padding-left: 0px;
+      display: inline-flex;
     }
   }
   .input-footer {
+    width: 358px;
     display: inline;
     padding: 15px 0 15px 16px;
-    margin-left: 78px;
-    width: 350px;
+    margin-left: 0;
   }
   .button {
-    display: flex;
     display: inline;
-    width: 200px;
-    margin-bottom: 0;
     margin-left: 12px;
-    justify-content: left;
   }
 }

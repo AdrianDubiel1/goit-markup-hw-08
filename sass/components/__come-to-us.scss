@@ -19,7 +19,7 @@
   &__element {
     display: flex;
     padding: 12px;
-    margin-right: 10px;
+    margin-left: 10px;
     fill: #ffffff;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
@@ -35,21 +35,23 @@
 }
 @media screen and (min-width: 768px) {
   .come-to-us {
-    margin: 22px 0 0 144px;
+    margin-left: 144px;
+  }
+  .come-to-us-title__icons {
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .come-to-us {
-    margin: 0;
+    margin: 72px 0 0 50px;
     max-width: 276px;
     text-align: left;
   }
   .come-to-us-title {
-    margin: 72px 0px 20px 70px;
+    margin: 0 0 20px 10px;
     &__icons {
       justify-content: space-between;
-      padding-left: 70px;
-      margin-right: 863px;
+
       padding-bottom: 0;
     }
   }
