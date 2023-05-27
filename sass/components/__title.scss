@@ -63,6 +63,7 @@
       ),
       url(/goit-markup-hw-08/images/tablet-background.jpg);
     background-size: 768px 400px;
+    margin: 0 auto;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -75,6 +76,7 @@
         ),
         url(/goit-markup-hw-08/images/tablet-background@2x.jpg);
       background-size: 768px 400px;
+      margin: 0 auto;
     }
   }
 }
