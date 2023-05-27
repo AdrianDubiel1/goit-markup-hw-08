@@ -16,6 +16,7 @@
   }
   &__label {
     display: flex;
+    justify-content: center;
   }
   &__button {
     display: flex;
@@ -73,14 +74,14 @@
     margin-top: 60px;
   }
   .input-footer {
-    margin-left: 166px;
+    margin-left: 145px;
   }
 }
 @media screen and (min-width: 1200px) {
   .newsletter {
     justify-content: left;
     &-area {
-      margin: 72px 0 0 78px;
+      margin: 57px 0 0 78px;
       width: 655px;
     }
     &__label {

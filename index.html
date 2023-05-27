@@ -151,7 +151,8 @@
               <li class="what-we-do-img">
                 <img
                   src="images/img1.jpg"
-                  srcset="images\img1-@2x.jpg 740w"
+                  srcset="images/img1-@2x.jpg 740w"
+                  sizes="370px"
                   alt="programista pracuje przy swoim biurku"
                   width="370"
                   height="294"
@@ -161,7 +162,8 @@
               <li class="what-we-do-img">
                 <img
                   src="images/img2.jpg"
-                  srcset="images\img2-@2x.jpg 740w"
+                  srcset="images/img2-@2x.jpg 740w"
+                  sizes="370px"
                   alt="programista pracuje nad aplikacją mobilną"
                   width="370"
                   height="294"
@@ -171,7 +173,8 @@
               <li class="what-we-do-img">
                 <img
                   src="images/img3.jpg"
-                  srcset="images\img3-@2x.jpg 740w"
+                  srcset="images/img3-@2x.jpg 740w"
+                  sizes="370px"
                   alt="grafik wybierający kolor z palety kolorów"
                   width="370"
                   height="294"
@@ -193,6 +196,7 @@
                   alt="Zdjęcie Johna Doe"
                   src="images/mobile/mobile-img1.jpg"
                   srcset="images/mobile/mobile-img1-@2x.jpg 900w"
+                  sizes="450px"
                   width="450"
                   height="460"
                 />
@@ -235,7 +239,8 @@
                 <img
                   alt="Zdjęcie Johna Doe"
                   src="images/mobile/mobile-img2.jpg"
-                  srcset="images\mobile\mobile-img2-@2x.jpg 900w"
+                  srcset="images/mobile/mobile-img2-@2x.jpg 900w"
+                  sizes="450px"
                   width="450"
                   height="460"
                 />
@@ -277,7 +282,8 @@
               <div class="team-img">
                 <img
                   src="images/mobile/mobile-img3.jpg"
-                  srcset="images\mobile\mobile-img3-@2x.jpg 900w"
+                  srcset="images/mobile/mobile-img3-@2x.jpg 900w"
+                  sizes="450px"
                   alt="Zdjęcie Johna Doe"
                   width="450"
                   height="460"
@@ -320,7 +326,8 @@
               <div class="team-img">
                 <img
                   src="images/mobile/mobile-img4.jpg"
-                  srcset="images\mobile\mobile-img4-@2x.jpg 900w"
+                  srcset="images/mobile/mobile-img4-@2x.jpg 900w"
+                  sizes="450px"
                   alt="Zdjęcie Johna Doe"
                   width="450"
                   height="460"
@@ -554,27 +561,29 @@
             </label>
           </div>
           <div class="checked__container">
-          <label>
-            <svg class="checked__no" width="16px" height="15px">
-              <use href="images/icons.svg#icon-Vector"></use>
-            </svg>
-            <input class="checked" type="checkbox" name="regulamin" />
-            <svg class="checked__yes" width="16px" height="15px">
-              <use href="images/icons.svg#icon-Vector-1"></use>
-            </svg>
-          </label>
-          <p class="private-policy">
-            Oświadczam iż akceptuję &nbsp;
-            <a class="private-policy__link" href=""> Regulamin</a>&nbsp;i&nbsp;
-            <a class="private-policy__link" href=""> Politykę Prywatności.</a>
-          </p>
+            <label>
+              <svg class="checked__no" width="16px" height="15px">
+                <use href="images/icons.svg#icon-Vector"></use>
+              </svg>
+              <input class="checked" type="checkbox" name="regulamin" />
+              <svg class="checked__yes" width="16px" height="15px">
+                <use href="images/icons.svg#icon-Vector-1"></use>
+              </svg>
+            </label>
+            <p class="private-policy">
+              Oświadczam iż akceptuję &nbsp;
+              <a class="private-policy__link" href=""> Regulamin</a
+              >&nbsp;i&nbsp;
+              <a class="private-policy__link" href=""> Politykę Prywatności.</a>
+            </p>
+          </div>
           <div class="button-modal">
             <button class="button-modal__a" type="submit">Wyślij</button>
           </div>
         </form>
       </div>
     </div>
-   <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="18px" height="18px">
           <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
@@ -623,13 +632,13 @@
         </li>
       </ul>
     </div>
-     <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-       <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
