@@ -81,7 +81,8 @@
   .newsletter {
     justify-content: left;
     &-area {
-      margin: 57px 0 0 78px;
+      display: block;
+      margin: 72px 0 0 78px;
       width: 655px;
     }
     &__label {

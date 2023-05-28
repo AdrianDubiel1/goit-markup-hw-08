@@ -37,8 +37,11 @@
   .come-to-us {
     margin-left: 144px;
   }
-  .come-to-us-title__icons {
-    padding-bottom: 0;
+  .come-to-us-title {
+    margin-top: 65px;
+    &__icons {
+      padding-bottom: 0;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
